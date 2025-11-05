@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🌱 SmartCrop - Fuzzy Crop Recommendation</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom right, #eafaf1, #d4f1c5);
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    .container {
+      width: 50%;
+      margin: 50px auto;
+      background: white;
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    h1 {
+      color: #2b7a0b;
+      margin-bottom: 10px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-top: 20px;
+    }
+    input, select, button {
+      padding: 10px;
+      border: 1px solid #aaa;
+      border-radius: 8px;
+      font-size: 16px;
+      outline: none;
+    }
+    input:focus, select:focus {
+      border-color: #2b7a0b;
+    }
+    button {
+      background: #2b7a0b;
+      color: white;
+      cursor: pointer;
+      transition: 0.3s;
+      font-weight: bold;
+    }
+    button:hover {
+      background: #3fa34d;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🌿 SmartCrop</h1>
+    <h3>Fuzzy Logic Based Crop Recommendation</h3>
+
+    <form action="/predict" method="post" enctype="multipart/form-data">
+      <label>🌡️ Temperature (°C):</label>
+      <input type="number" step="0.1" name="temperature" required>
+
+      <label>💧 Humidity (%):</label>
+      <input type="number" step="0.1" name="humidity" required>
+
+      <label>🌧️ Rainfall (mm):</label>
+      <input type="number" step="0.1" name="rainfall" required>
+
+      <label>🧪 Soil pH:</label>
+      <input type="number" step="0.1" name="ph" required>
+
+      <label>🌾 Soil Type:</label>
+      <select name="soil_name" required>
+        <option value="Black Soil">Black Soil</option>
+        <option value="Cinder Soil">Cinder Soil</option>
+        <option value="Laterite Soil">Laterite Soil</option>
+        <option value="Peat Soil">Peat Soil</option>
+        <option value="Yellow Soil">Yellow Soil</option>
+        <option value="Red Soil">Red Soil</option>
+        <option value="Alluvial Soil">Alluvial Soil</option>
+      </select>
+
+      <button type="submit">🔍 Get Recommendations</button>
+    </form>
+  </div>
+</body>
+</html>
