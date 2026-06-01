@@ -23,6 +23,7 @@ dist/
 # Runtime files
 logs/
 uploads/
+*.log
 *.db
 *.sqlite
 *.sqlite3

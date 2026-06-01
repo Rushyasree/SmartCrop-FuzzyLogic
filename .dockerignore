@@ -7,5 +7,7 @@
 **/.env
 **/venv
 **/.codex-venv
+**/*.log
+**/data
 uploads
 logs

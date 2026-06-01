@@ -136,8 +136,19 @@ docker compose up --build
 - Backend: `http://localhost:5000`
 - Swagger UI: `http://localhost:5000/api/docs`
 
+## Railway Deployment
+
+Railway deployment files are included for a public full-stack demo with PostgreSQL:
+
+- `backend/railway.json`
+- `frontend/railway.json`
+- `DEPLOY_RAILWAY.md`
+
+Deploy the repository as three Railway services: PostgreSQL, backend from `/backend`, and frontend from `/frontend`. Set the frontend `VITE_API_URL` to the backend public URL plus `/api`, then set backend `FRONTEND_URL`/`FRONTEND_URLS` to the frontend public URL.
+
 ## Main API Areas
 
+- `GET /api/health`
 - `GET /api/docs`
 - `GET /api/openapi.json`
 - `POST /api/auth/register`

@@ -97,15 +97,20 @@ register_soil_data_routes(app)
 register_prediction_routes(app)
 register_api_docs_routes(app)
 
+def get_cors_origins():
+    """Return allowed frontend origins from FRONTEND_URL or FRONTEND_URLS."""
+    configured = os.getenv('FRONTEND_URLS') or os.getenv('FRONTEND_URL', 'http://localhost:3000')
+    origins = [origin.strip() for origin in configured.split(',') if origin.strip()]
+    origins.append("http://localhost")
+    return origins
+
+
 # ============================================================================
 # CORS CONFIGURATION
 # ============================================================================
 CORS(app, resources={
     r"/api/*": {
-        "origins": [
-            os.getenv('FRONTEND_URL', 'http://localhost:3000'),
-            "http://localhost"
-        ],
+        "origins": get_cors_origins(),
         "methods": ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
         "allow_headers": ["Content-Type", "Authorization"],
         "expose_headers": ["Content-Type"],
@@ -212,6 +217,7 @@ def extract_prediction_inputs():
 # ============================================================================
 
 @app.route('/health', methods=['GET'])
+@app.route('/api/health', methods=['GET'])
 def health_check():
     """Health check endpoint for monitoring"""
     return jsonify({
@@ -371,6 +377,6 @@ if __name__ == "__main__":
     # Use gunicorn in production: gunicorn -w 4 -b 0.0.0.0:5000 app:app
     debug_mode = os.getenv('FLASK_DEBUG', 'false').lower() == 'true'
     host = os.getenv('FLASK_HOST', '127.0.0.1')
-    port = int(os.getenv('FLASK_PORT', 5000))
+    port = int(os.getenv('PORT') or os.getenv('FLASK_PORT', 5000))
     app.run(debug=debug_mode, host=host, port=port)
 
