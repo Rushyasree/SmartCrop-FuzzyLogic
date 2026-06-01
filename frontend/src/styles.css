@@ -39,7 +39,8 @@ input:focus, select:focus, button:focus-visible { outline: 3px solid #9ed4bb; ou
 .dashboard-grid, .split { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
 .panel { padding: 18px; }
 .wide { grid-column: 1 / -1; }
-.chart-panel { min-height: 330px; }
+.chart-panel { display: flex; flex-direction: column; height: 280px; }
+.chart-panel canvas { max-height: 220px; }
 .list { display: grid; gap: 10px; }
 .row { display: grid; gap: 4px; padding: 12px; border-radius: 8px; background: #f6f8fa; }
 .row span { color: #667085; font-size: 14px; }
@@ -69,4 +70,6 @@ th { color: #667085; font-size: 13px; }
   .topbar, .recommendation div { align-items: flex-start; flex-direction: column; }
   .sidebar nav { grid-template-columns: 1fr 1fr; }
   .two-col, .three-col { grid-template-columns: 1fr; }
+  .chart-panel { height: 260px; }
+  .chart-panel canvas { max-height: 200px; }
 }
