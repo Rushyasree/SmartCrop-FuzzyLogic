@@ -10,6 +10,7 @@ BASE_DIR = Path(__file__).resolve().parents[1]
 if str(BASE_DIR) not in sys.path:
     sys.path.insert(0, str(BASE_DIR))
 
+from db_url import resolve_database_url  # noqa: E402
 from models import Base  # noqa: E402
 
 config = context.config
@@ -21,10 +22,7 @@ target_metadata = Base.metadata
 
 
 def get_database_url():
-    return os.getenv(
-        "DATABASE_URL",
-        config.get_main_option("sqlalchemy.url"),
-    )
+    return resolve_database_url(config.get_main_option("sqlalchemy.url"))
 
 
 def run_migrations_offline():

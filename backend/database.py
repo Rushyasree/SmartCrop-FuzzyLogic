@@ -9,6 +9,7 @@ from contextlib import contextmanager
 import os
 from dotenv import load_dotenv
 from models import Base
+from db_url import resolve_database_url
 
 load_dotenv()
 
@@ -16,11 +17,8 @@ load_dotenv()
 # DATABASE CONFIGURATION
 # ============================================================================
 
-# Database URL from environment variable or default
-DATABASE_URL = os.getenv(
-    'DATABASE_URL',
-    'postgresql://postgres:password@localhost:5432/crop_zen'
-)
+# Database URL from Railway/PostgreSQL environment variables or local default.
+DATABASE_URL = resolve_database_url()
 
 def _engine_options(database_url: str):
     """Return engine options compatible with the selected database backend."""
