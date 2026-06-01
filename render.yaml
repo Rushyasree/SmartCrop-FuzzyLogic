@@ -1,0 +1,39 @@
+services:
+  - type: web
+    name: smartcrop
+    runtime: docker
+    plan: free
+    branch: main
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    healthCheckPath: /api/health
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: smartcrop-db
+          property: connectionString
+      - key: SECRET_KEY
+        generateValue: true
+      - key: FLASK_ENV
+        value: production
+      - key: FLASK_DEBUG
+        value: "false"
+      - key: LOG_FOLDER
+        value: logs
+      - key: UPLOAD_FOLDER
+        value: uploads
+      - key: MAX_UPLOAD_SIZE
+        value: "5242880"
+      - key: CROP_MODEL_PATH
+        value: ml_models/crop_recommendation_model.joblib
+      - key: DISEASE_MODEL_PATH
+        value: ml_models/disease_detection_model.keras
+      - key: DISEASE_LABELS_PATH
+        value: ml_models/disease_labels.json
+      - key: FRONTEND_DIST
+        value: /app/frontend_dist
+
+databases:
+  - name: smartcrop-db
+    plan: free
+    databaseName: crop_zen
