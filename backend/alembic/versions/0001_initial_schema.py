@@ -7,6 +7,7 @@ Create Date: 2026-05-31 10:30:00
 
 from alembic import op
 import sqlalchemy as sa
+from sqlalchemy.dialects import postgresql
 
 
 revision = "0001_initial_schema"
@@ -16,13 +17,15 @@ depends_on = None
 
 
 def upgrade():
-    user_role = sa.Enum("FARMER", "ADMIN", "RESEARCHER", name="userrole")
-    season = sa.Enum("KHARIF", "RABI", "SUMMER", "YEAR_ROUND", name="season")
-
     bind = op.get_bind()
-    if bind.dialect.name != "sqlite":
-        user_role.create(bind, checkfirst=True)
-        season.create(bind, checkfirst=True)
+    if bind.dialect.name == "sqlite":
+        user_role = sa.Enum("FARMER", "ADMIN", "RESEARCHER", name="userrole")
+        season = sa.Enum("KHARIF", "RABI", "SUMMER", "YEAR_ROUND", name="season")
+    else:
+        postgresql.ENUM("FARMER", "ADMIN", "RESEARCHER", name="userrole").create(bind, checkfirst=True)
+        postgresql.ENUM("KHARIF", "RABI", "SUMMER", "YEAR_ROUND", name="season").create(bind, checkfirst=True)
+        user_role = postgresql.ENUM("FARMER", "ADMIN", "RESEARCHER", name="userrole", create_type=False)
+        season = postgresql.ENUM("KHARIF", "RABI", "SUMMER", "YEAR_ROUND", name="season", create_type=False)
 
     op.create_table(
         "users",
