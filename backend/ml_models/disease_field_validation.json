@@ -1,0 +1,1132 @@
+{
+  "input_dir": "data\\plant_disease\\test\\test",
+  "image_count": 33,
+  "labeled_count": 33,
+  "correct_count": 31,
+  "accuracy": 0.9393939393939394,
+  "failure_count": 2,
+  "failures": [
+    {
+      "file": "AppleScab3.JPG",
+      "expected_label": "Apple___Apple_scab",
+      "predicted_label": "Squash___Powdery_mildew",
+      "disease": "Squash - Powdery mildew",
+      "confidence": 0.7111,
+      "is_low_confidence": true,
+      "warning": "Low confidence prediction. Capture a clearer leaf image and confirm with an agricultural expert.",
+      "top_predictions": [
+        {
+          "rank": 1,
+          "raw_label": "Squash___Powdery_mildew",
+          "disease": "Squash - Powdery mildew",
+          "confidence": 0.7111
+        },
+        {
+          "rank": 2,
+          "raw_label": "Apple___Apple_scab",
+          "disease": "Apple - Apple scab",
+          "confidence": 0.2861
+        },
+        {
+          "rank": 3,
+          "raw_label": "Tomato___healthy",
+          "disease": "Tomato - healthy",
+          "confidence": 0.001
+        }
+      ],
+      "status": "success",
+      "correct": false,
+      "message": "Disease inference completed"
+    },
+    {
+      "file": "TomatoEarlyBlight3.JPG",
+      "expected_label": "Tomato___Early_blight",
+      "predicted_label": "Tomato___Target_Spot",
+      "disease": "Tomato - Target Spot",
+      "confidence": 0.4384,
+      "is_low_confidence": true,
+      "warning": "Low confidence prediction. Capture a clearer leaf image and confirm with an agricultural expert.",
+      "top_predictions": [
+        {
+          "rank": 1,
+          "raw_label": "Tomato___Target_Spot",
+          "disease": "Tomato - Target Spot",
+          "confidence": 0.4384
+        },
+        {
+          "rank": 2,
+          "raw_label": "Tomato___Early_blight",
+          "disease": "Tomato - Early blight",
+          "confidence": 0.2207
+        },
+        {
+          "rank": 3,
+          "raw_label": "Tomato___Tomato_mosaic_virus",
+          "disease": "Tomato - Tomato mosaic virus",
+          "confidence": 0.1777
+        }
+      ],
+      "status": "success",
+      "correct": false,
+      "message": "Disease inference completed"
+    }
+  ],
+  "results": [
+    {
+      "file": "AppleCedarRust1.JPG",
+      "expected_label": "Apple___Cedar_apple_rust",
+      "predicted_label": "Apple___Cedar_apple_rust",
+      "disease": "Apple - Cedar apple rust",
+      "confidence": 0.9999,
+      "is_low_confidence": false,
+      "warning": null,
+      "top_predictions": [
+        {
+          "rank": 1,
+          "raw_label": "Apple___Cedar_apple_rust",
+          "disease": "Apple - Cedar apple rust",
+          "confidence": 0.9999
+        },
+        {
+          "rank": 2,
+          "raw_label": "Apple___Apple_scab",
+          "disease": "Apple - Apple scab",
+          "confidence": 0.0
+        },
+        {
+          "rank": 3,
+          "raw_label": "Peach___Bacterial_spot",
+          "disease": "Peach - Bacterial spot",
+          "confidence": 0.0
+        }
+      ],
+      "status": "success",
+      "correct": true,
+      "message": "Disease inference completed"
+    },
+    {
+      "file": "AppleCedarRust2.JPG",
+      "expected_label": "Apple___Cedar_apple_rust",
+      "predicted_label": "Apple___Cedar_apple_rust",
+      "disease": "Apple - Cedar apple rust",
+      "confidence": 0.9995,
+      "is_low_confidence": false,
+      "warning": null,
+      "top_predictions": [
+        {
+          "rank": 1,
+          "raw_label": "Apple___Cedar_apple_rust",
+          "disease": "Apple - Cedar apple rust",
+          "confidence": 0.9995
+        },
+        {
+          "rank": 2,
+          "raw_label": "Pepper,_bell___Bacterial_spot",
+          "disease": "Pepper, bell - Bacterial spot",
+          "confidence": 0.0005
+        },
+        {
+          "rank": 3,
+          "raw_label": "Potato___Late_blight",
+          "disease": "Potato - Late blight",
+          "confidence": 0.0
+        }
+      ],
+      "status": "success",
+      "correct": true,
+      "message": "Disease inference completed"
+    },
+    {
+      "file": "AppleCedarRust3.JPG",
+      "expected_label": "Apple___Cedar_apple_rust",
+      "predicted_label": "Apple___Cedar_apple_rust",
+      "disease": "Apple - Cedar apple rust",
+      "confidence": 0.9573,
+      "is_low_confidence": false,
+      "warning": null,
+      "top_predictions": [
+        {
+          "rank": 1,
+          "raw_label": "Apple___Cedar_apple_rust",
+          "disease": "Apple - Cedar apple rust",
+          "confidence": 0.9573
+        },
+        {
+          "rank": 2,
+          "raw_label": "Pepper,_bell___Bacterial_spot",
+          "disease": "Pepper, bell - Bacterial spot",
+          "confidence": 0.0308
+        },
+        {
+          "rank": 3,
+          "raw_label": "Apple___Black_rot",
+          "disease": "Apple - Black rot",
+          "confidence": 0.0086
+        }
+      ],
+      "status": "success",
+      "correct": true,
+      "message": "Disease inference completed"
+    },
+    {
+      "file": "AppleCedarRust4.JPG",
+      "expected_label": "Apple___Cedar_apple_rust",
+      "predicted_label": "Apple___Cedar_apple_rust",
+      "disease": "Apple - Cedar apple rust",
+      "confidence": 1.0,
+      "is_low_confidence": false,
+      "warning": null,
+      "top_predictions": [
+        {
+          "rank": 1,
+          "raw_label": "Apple___Cedar_apple_rust",
+          "disease": "Apple - Cedar apple rust",
+          "confidence": 1.0
+        },
+        {
+          "rank": 2,
+          "raw_label": "Apple___Apple_scab",
+          "disease": "Apple - Apple scab",
+          "confidence": 0.0
+        },
+        {
+          "rank": 3,
+          "raw_label": "Potato___Late_blight",
+          "disease": "Potato - Late blight",
+          "confidence": 0.0
+        }
+      ],
+      "status": "success",
+      "correct": true,
+      "message": "Disease inference completed"
+    },
+    {
+      "file": "AppleScab1.JPG",
+      "expected_label": "Apple___Apple_scab",
+      "predicted_label": "Apple___Apple_scab",
+      "disease": "Apple - Apple scab",
+      "confidence": 0.9836,
+      "is_low_confidence": false,
+      "warning": null,
+      "top_predictions": [
+        {
+          "rank": 1,
+          "raw_label": "Apple___Apple_scab",
+          "disease": "Apple - Apple scab",
+          "confidence": 0.9836
+        },
+        {
+          "rank": 2,
+          "raw_label": "Apple___Cedar_apple_rust",
+          "disease": "Apple - Cedar apple rust",
+          "confidence": 0.0054
+        },
+        {
+          "rank": 3,
+          "raw_label": "Cherry_(including_sour)___Powdery_mildew",
+          "disease": "Cherry (including sour) - Powdery mildew",
+          "confidence": 0.0039
+        }
+      ],
+      "status": "success",
+      "correct": true,
+      "message": "Disease inference completed"
+    },
+    {
+      "file": "AppleScab2.JPG",
+      "expected_label": "Apple___Apple_scab",
+      "predicted_label": "Apple___Apple_scab",
+      "disease": "Apple - Apple scab",
+      "confidence": 1.0,
+      "is_low_confidence": false,
+      "warning": null,
+      "top_predictions": [
+        {
+          "rank": 1,
+          "raw_label": "Apple___Apple_scab",
+          "disease": "Apple - Apple scab",
+          "confidence": 1.0
+        },
+        {
+          "rank": 2,
+          "raw_label": "Peach___Bacterial_spot",
+          "disease": "Peach - Bacterial spot",
+          "confidence": 0.0
+        },
+        {
+          "rank": 3,
+          "raw_label": "Apple___Cedar_apple_rust",
+          "disease": "Apple - Cedar apple rust",
+          "confidence": 0.0
+        }
+      ],
+      "status": "success",
+      "correct": true,
+      "message": "Disease inference completed"
+    },
+    {
+      "file": "AppleScab3.JPG",
+      "expected_label": "Apple___Apple_scab",
+      "predicted_label": "Squash___Powdery_mildew",
+      "disease": "Squash - Powdery mildew",
+      "confidence": 0.7111,
+      "is_low_confidence": true,
+      "warning": "Low confidence prediction. Capture a clearer leaf image and confirm with an agricultural expert.",
+      "top_predictions": [
+        {
+          "rank": 1,
+          "raw_label": "Squash___Powdery_mildew",
+          "disease": "Squash - Powdery mildew",
+          "confidence": 0.7111
+        },
+        {
+          "rank": 2,
+          "raw_label": "Apple___Apple_scab",
+          "disease": "Apple - Apple scab",
+          "confidence": 0.2861
+        },
+        {
+          "rank": 3,
+          "raw_label": "Tomato___healthy",
+          "disease": "Tomato - healthy",
+          "confidence": 0.001
+        }
+      ],
+      "status": "success",
+      "correct": false,
+      "message": "Disease inference completed"
+    },
+    {
+      "file": "CornCommonRust1.JPG",
+      "expected_label": "Corn_(maize)___Common_rust_",
+      "predicted_label": "Corn_(maize)___Common_rust_",
+      "disease": "Corn (maize) - Common rust ",
+      "confidence": 1.0,
+      "is_low_confidence": false,
+      "warning": null,
+      "top_predictions": [
+        {
+          "rank": 1,
+          "raw_label": "Corn_(maize)___Common_rust_",
+          "disease": "Corn (maize) - Common rust ",
+          "confidence": 1.0
+        },
+        {
+          "rank": 2,
+          "raw_label": "Corn_(maize)___Northern_Leaf_Blight",
+          "disease": "Corn (maize) - Northern Leaf Blight",
+          "confidence": 0.0
+        },
+        {
+          "rank": 3,
+          "raw_label": "Apple___Apple_scab",
+          "disease": "Apple - Apple scab",
+          "confidence": 0.0
+        }
+      ],
+      "status": "success",
+      "correct": true,
+      "message": "Disease inference completed"
+    },
+    {
+      "file": "CornCommonRust2.JPG",
+      "expected_label": "Corn_(maize)___Common_rust_",
+      "predicted_label": "Corn_(maize)___Common_rust_",
+      "disease": "Corn (maize) - Common rust ",
+      "confidence": 1.0,
+      "is_low_confidence": false,
+      "warning": null,
+      "top_predictions": [
+        {
+          "rank": 1,
+          "raw_label": "Corn_(maize)___Common_rust_",
+          "disease": "Corn (maize) - Common rust ",
+          "confidence": 1.0
+        },
+        {
+          "rank": 2,
+          "raw_label": "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot",
+          "disease": "Corn (maize) - Cercospora leaf spot Gray leaf spot",
+          "confidence": 0.0
+        },
+        {
+          "rank": 3,
+          "raw_label": "Potato___Late_blight",
+          "disease": "Potato - Late blight",
+          "confidence": 0.0
+        }
+      ],
+      "status": "success",
+      "correct": true,
+      "message": "Disease inference completed"
+    },
+    {
+      "file": "CornCommonRust3.JPG",
+      "expected_label": "Corn_(maize)___Common_rust_",
+      "predicted_label": "Corn_(maize)___Common_rust_",
+      "disease": "Corn (maize) - Common rust ",
+      "confidence": 1.0,
+      "is_low_confidence": false,
+      "warning": null,
+      "top_predictions": [
+        {
+          "rank": 1,
+          "raw_label": "Corn_(maize)___Common_rust_",
+          "disease": "Corn (maize) - Common rust ",
+          "confidence": 1.0
+        },
+        {
+          "rank": 2,
+          "raw_label": "Corn_(maize)___Northern_Leaf_Blight",
+          "disease": "Corn (maize) - Northern Leaf Blight",
+          "confidence": 0.0
+        },
+        {
+          "rank": 3,
+          "raw_label": "Apple___Apple_scab",
+          "disease": "Apple - Apple scab",
+          "confidence": 0.0
+        }
+      ],
+      "status": "success",
+      "correct": true,
+      "message": "Disease inference completed"
+    },
+    {
+      "file": "PotatoEarlyBlight1.JPG",
+      "expected_label": "Potato___Early_blight",
+      "predicted_label": "Potato___Early_blight",
+      "disease": "Potato - Early blight",
+      "confidence": 0.9976,
+      "is_low_confidence": false,
+      "warning": null,
+      "top_predictions": [
+        {
+          "rank": 1,
+          "raw_label": "Potato___Early_blight",
+          "disease": "Potato - Early blight",
+          "confidence": 0.9976
+        },
+        {
+          "rank": 2,
+          "raw_label": "Potato___Late_blight",
+          "disease": "Potato - Late blight",
+          "confidence": 0.0024
+        },
+        {
+          "rank": 3,
+          "raw_label": "Tomato___Early_blight",
+          "disease": "Tomato - Early blight",
+          "confidence": 0.0
+        }
+      ],
+      "status": "success",
+      "correct": true,
+      "message": "Disease inference completed"
+    },
+    {
+      "file": "PotatoEarlyBlight2.JPG",
+      "expected_label": "Potato___Early_blight",
+      "predicted_label": "Potato___Early_blight",
+      "disease": "Potato - Early blight",
+      "confidence": 0.9997,
+      "is_low_confidence": false,
+      "warning": null,
+      "top_predictions": [
+        {
+          "rank": 1,
+          "raw_label": "Potato___Early_blight",
+          "disease": "Potato - Early blight",
+          "confidence": 0.9997
+        },
+        {
+          "rank": 2,
+          "raw_label": "Apple___Apple_scab",
+          "disease": "Apple - Apple scab",
+          "confidence": 0.0002
+        },
+        {
+          "rank": 3,
+          "raw_label": "Tomato___Septoria_leaf_spot",
+          "disease": "Tomato - Septoria leaf spot",
+          "confidence": 0.0
+        }
+      ],
+      "status": "success",
+      "correct": true,
+      "message": "Disease inference completed"
+    },
+    {
+      "file": "PotatoEarlyBlight3.JPG",
+      "expected_label": "Potato___Early_blight",
+      "predicted_label": "Potato___Early_blight",
+      "disease": "Potato - Early blight",
+      "confidence": 0.9767,
+      "is_low_confidence": false,
+      "warning": null,
+      "top_predictions": [
+        {
+          "rank": 1,
+          "raw_label": "Potato___Early_blight",
+          "disease": "Potato - Early blight",
+          "confidence": 0.9767
+        },
+        {
+          "rank": 2,
+          "raw_label": "Potato___Late_blight",
+          "disease": "Potato - Late blight",
+          "confidence": 0.0163
+        },
+        {
+          "rank": 3,
+          "raw_label": "Pepper,_bell___Bacterial_spot",
+          "disease": "Pepper, bell - Bacterial spot",
+          "confidence": 0.0059
+        }
+      ],
+      "status": "success",
+      "correct": true,
+      "message": "Disease inference completed"
+    },
+    {
+      "file": "PotatoEarlyBlight4.JPG",
+      "expected_label": "Potato___Early_blight",
+      "predicted_label": "Potato___Early_blight",
+      "disease": "Potato - Early blight",
+      "confidence": 0.9997,
+      "is_low_confidence": false,
+      "warning": null,
+      "top_predictions": [
+        {
+          "rank": 1,
+          "raw_label": "Potato___Early_blight",
+          "disease": "Potato - Early blight",
+          "confidence": 0.9997
+        },
+        {
+          "rank": 2,
+          "raw_label": "Pepper,_bell___Bacterial_spot",
+          "disease": "Pepper, bell - Bacterial spot",
+          "confidence": 0.0001
+        },
+        {
+          "rank": 3,
+          "raw_label": "Tomato___Septoria_leaf_spot",
+          "disease": "Tomato - Septoria leaf spot",
+          "confidence": 0.0001
+        }
+      ],
+      "status": "success",
+      "correct": true,
+      "message": "Disease inference completed"
+    },
+    {
+      "file": "PotatoEarlyBlight5.JPG",
+      "expected_label": "Potato___Early_blight",
+      "predicted_label": "Potato___Early_blight",
+      "disease": "Potato - Early blight",
+      "confidence": 0.999,
+      "is_low_confidence": false,
+      "warning": null,
+      "top_predictions": [
+        {
+          "rank": 1,
+          "raw_label": "Potato___Early_blight",
+          "disease": "Potato - Early blight",
+          "confidence": 0.999
+        },
+        {
+          "rank": 2,
+          "raw_label": "Potato___Late_blight",
+          "disease": "Potato - Late blight",
+          "confidence": 0.0008
+        },
+        {
+          "rank": 3,
+          "raw_label": "Pepper,_bell___Bacterial_spot",
+          "disease": "Pepper, bell - Bacterial spot",
+          "confidence": 0.0002
+        }
+      ],
+      "status": "success",
+      "correct": true,
+      "message": "Disease inference completed"
+    },
+    {
+      "file": "PotatoHealthy1.JPG",
+      "expected_label": "Potato___healthy",
+      "predicted_label": "Potato___healthy",
+      "disease": "Potato - healthy",
+      "confidence": 0.5034,
+      "is_low_confidence": true,
+      "warning": "Low confidence prediction. Capture a clearer leaf image and confirm with an agricultural expert.",
+      "top_predictions": [
+        {
+          "rank": 1,
+          "raw_label": "Potato___healthy",
+          "disease": "Potato - healthy",
+          "confidence": 0.5034
+        },
+        {
+          "rank": 2,
+          "raw_label": "Potato___Late_blight",
+          "disease": "Potato - Late blight",
+          "confidence": 0.3161
+        },
+        {
+          "rank": 3,
+          "raw_label": "Soybean___healthy",
+          "disease": "Soybean - healthy",
+          "confidence": 0.1674
+        }
+      ],
+      "status": "success",
+      "correct": true,
+      "message": "Disease inference completed"
+    },
+    {
+      "file": "PotatoHealthy2.JPG",
+      "expected_label": "Potato___healthy",
+      "predicted_label": "Potato___healthy",
+      "disease": "Potato - healthy",
+      "confidence": 0.7036,
+      "is_low_confidence": true,
+      "warning": "Low confidence prediction. Capture a clearer leaf image and confirm with an agricultural expert.",
+      "top_predictions": [
+        {
+          "rank": 1,
+          "raw_label": "Potato___healthy",
+          "disease": "Potato - healthy",
+          "confidence": 0.7036
+        },
+        {
+          "rank": 2,
+          "raw_label": "Soybean___healthy",
+          "disease": "Soybean - healthy",
+          "confidence": 0.2304
+        },
+        {
+          "rank": 3,
+          "raw_label": "Potato___Late_blight",
+          "disease": "Potato - Late blight",
+          "confidence": 0.0377
+        }
+      ],
+      "status": "success",
+      "correct": true,
+      "message": "Disease inference completed"
+    },
+    {
+      "file": "TomatoEarlyBlight1.JPG",
+      "expected_label": "Tomato___Early_blight",
+      "predicted_label": "Tomato___Early_blight",
+      "disease": "Tomato - Early blight",
+      "confidence": 0.8748,
+      "is_low_confidence": false,
+      "warning": null,
+      "top_predictions": [
+        {
+          "rank": 1,
+          "raw_label": "Tomato___Early_blight",
+          "disease": "Tomato - Early blight",
+          "confidence": 0.8748
+        },
+        {
+          "rank": 2,
+          "raw_label": "Tomato___Septoria_leaf_spot",
+          "disease": "Tomato - Septoria leaf spot",
+          "confidence": 0.0756
+        },
+        {
+          "rank": 3,
+          "raw_label": "Tomato___Late_blight",
+          "disease": "Tomato - Late blight",
+          "confidence": 0.0415
+        }
+      ],
+      "status": "success",
+      "correct": true,
+      "message": "Disease inference completed"
+    },
+    {
+      "file": "TomatoEarlyBlight2.JPG",
+      "expected_label": "Tomato___Early_blight",
+      "predicted_label": "Tomato___Early_blight",
+      "disease": "Tomato - Early blight",
+      "confidence": 0.8165,
+      "is_low_confidence": false,
+      "warning": null,
+      "top_predictions": [
+        {
+          "rank": 1,
+          "raw_label": "Tomato___Early_blight",
+          "disease": "Tomato - Early blight",
+          "confidence": 0.8165
+        },
+        {
+          "rank": 2,
+          "raw_label": "Tomato___Late_blight",
+          "disease": "Tomato - Late blight",
+          "confidence": 0.1603
+        },
+        {
+          "rank": 3,
+          "raw_label": "Tomato___Bacterial_spot",
+          "disease": "Tomato - Bacterial spot",
+          "confidence": 0.0112
+        }
+      ],
+      "status": "success",
+      "correct": true,
+      "message": "Disease inference completed"
+    },
+    {
+      "file": "TomatoEarlyBlight3.JPG",
+      "expected_label": "Tomato___Early_blight",
+      "predicted_label": "Tomato___Target_Spot",
+      "disease": "Tomato - Target Spot",
+      "confidence": 0.4384,
+      "is_low_confidence": true,
+      "warning": "Low confidence prediction. Capture a clearer leaf image and confirm with an agricultural expert.",
+      "top_predictions": [
+        {
+          "rank": 1,
+          "raw_label": "Tomato___Target_Spot",
+          "disease": "Tomato - Target Spot",
+          "confidence": 0.4384
+        },
+        {
+          "rank": 2,
+          "raw_label": "Tomato___Early_blight",
+          "disease": "Tomato - Early blight",
+          "confidence": 0.2207
+        },
+        {
+          "rank": 3,
+          "raw_label": "Tomato___Tomato_mosaic_virus",
+          "disease": "Tomato - Tomato mosaic virus",
+          "confidence": 0.1777
+        }
+      ],
+      "status": "success",
+      "correct": false,
+      "message": "Disease inference completed"
+    },
+    {
+      "file": "TomatoEarlyBlight4.JPG",
+      "expected_label": "Tomato___Early_blight",
+      "predicted_label": "Tomato___Early_blight",
+      "disease": "Tomato - Early blight",
+      "confidence": 0.8438,
+      "is_low_confidence": false,
+      "warning": null,
+      "top_predictions": [
+        {
+          "rank": 1,
+          "raw_label": "Tomato___Early_blight",
+          "disease": "Tomato - Early blight",
+          "confidence": 0.8438
+        },
+        {
+          "rank": 2,
+          "raw_label": "Potato___Late_blight",
+          "disease": "Potato - Late blight",
+          "confidence": 0.042
+        },
+        {
+          "rank": 3,
+          "raw_label": "Tomato___Late_blight",
+          "disease": "Tomato - Late blight",
+          "confidence": 0.0403
+        }
+      ],
+      "status": "success",
+      "correct": true,
+      "message": "Disease inference completed"
+    },
+    {
+      "file": "TomatoEarlyBlight5.JPG",
+      "expected_label": "Tomato___Early_blight",
+      "predicted_label": "Tomato___Early_blight",
+      "disease": "Tomato - Early blight",
+      "confidence": 0.6146,
+      "is_low_confidence": true,
+      "warning": "Low confidence prediction. Capture a clearer leaf image and confirm with an agricultural expert.",
+      "top_predictions": [
+        {
+          "rank": 1,
+          "raw_label": "Tomato___Early_blight",
+          "disease": "Tomato - Early blight",
+          "confidence": 0.6146
+        },
+        {
+          "rank": 2,
+          "raw_label": "Tomato___Target_Spot",
+          "disease": "Tomato - Target Spot",
+          "confidence": 0.2809
+        },
+        {
+          "rank": 3,
+          "raw_label": "Tomato___Septoria_leaf_spot",
+          "disease": "Tomato - Septoria leaf spot",
+          "confidence": 0.0468
+        }
+      ],
+      "status": "success",
+      "correct": true,
+      "message": "Disease inference completed"
+    },
+    {
+      "file": "TomatoEarlyBlight6.JPG",
+      "expected_label": "Tomato___Early_blight",
+      "predicted_label": "Tomato___Early_blight",
+      "disease": "Tomato - Early blight",
+      "confidence": 0.9034,
+      "is_low_confidence": false,
+      "warning": null,
+      "top_predictions": [
+        {
+          "rank": 1,
+          "raw_label": "Tomato___Early_blight",
+          "disease": "Tomato - Early blight",
+          "confidence": 0.9034
+        },
+        {
+          "rank": 2,
+          "raw_label": "Tomato___Late_blight",
+          "disease": "Tomato - Late blight",
+          "confidence": 0.0653
+        },
+        {
+          "rank": 3,
+          "raw_label": "Tomato___Leaf_Mold",
+          "disease": "Tomato - Leaf Mold",
+          "confidence": 0.0195
+        }
+      ],
+      "status": "success",
+      "correct": true,
+      "message": "Disease inference completed"
+    },
+    {
+      "file": "TomatoHealthy1.JPG",
+      "expected_label": "Tomato___healthy",
+      "predicted_label": "Tomato___healthy",
+      "disease": "Tomato - healthy",
+      "confidence": 0.9999,
+      "is_low_confidence": false,
+      "warning": null,
+      "top_predictions": [
+        {
+          "rank": 1,
+          "raw_label": "Tomato___healthy",
+          "disease": "Tomato - healthy",
+          "confidence": 0.9999
+        },
+        {
+          "rank": 2,
+          "raw_label": "Tomato___Target_Spot",
+          "disease": "Tomato - Target Spot",
+          "confidence": 0.0
+        },
+        {
+          "rank": 3,
+          "raw_label": "Apple___healthy",
+          "disease": "Apple - healthy",
+          "confidence": 0.0
+        }
+      ],
+      "status": "success",
+      "correct": true,
+      "message": "Disease inference completed"
+    },
+    {
+      "file": "TomatoHealthy2.JPG",
+      "expected_label": "Tomato___healthy",
+      "predicted_label": "Tomato___healthy",
+      "disease": "Tomato - healthy",
+      "confidence": 0.9999,
+      "is_low_confidence": false,
+      "warning": null,
+      "top_predictions": [
+        {
+          "rank": 1,
+          "raw_label": "Tomato___healthy",
+          "disease": "Tomato - healthy",
+          "confidence": 0.9999
+        },
+        {
+          "rank": 2,
+          "raw_label": "Apple___healthy",
+          "disease": "Apple - healthy",
+          "confidence": 0.0
+        },
+        {
+          "rank": 3,
+          "raw_label": "Tomato___Target_Spot",
+          "disease": "Tomato - Target Spot",
+          "confidence": 0.0
+        }
+      ],
+      "status": "success",
+      "correct": true,
+      "message": "Disease inference completed"
+    },
+    {
+      "file": "TomatoHealthy3.JPG",
+      "expected_label": "Tomato___healthy",
+      "predicted_label": "Tomato___healthy",
+      "disease": "Tomato - healthy",
+      "confidence": 0.9056,
+      "is_low_confidence": false,
+      "warning": null,
+      "top_predictions": [
+        {
+          "rank": 1,
+          "raw_label": "Tomato___healthy",
+          "disease": "Tomato - healthy",
+          "confidence": 0.9056
+        },
+        {
+          "rank": 2,
+          "raw_label": "Tomato___Target_Spot",
+          "disease": "Tomato - Target Spot",
+          "confidence": 0.0917
+        },
+        {
+          "rank": 3,
+          "raw_label": "Tomato___Tomato_mosaic_virus",
+          "disease": "Tomato - Tomato mosaic virus",
+          "confidence": 0.0021
+        }
+      ],
+      "status": "success",
+      "correct": true,
+      "message": "Disease inference completed"
+    },
+    {
+      "file": "TomatoHealthy4.JPG",
+      "expected_label": "Tomato___healthy",
+      "predicted_label": "Tomato___healthy",
+      "disease": "Tomato - healthy",
+      "confidence": 1.0,
+      "is_low_confidence": false,
+      "warning": null,
+      "top_predictions": [
+        {
+          "rank": 1,
+          "raw_label": "Tomato___healthy",
+          "disease": "Tomato - healthy",
+          "confidence": 1.0
+        },
+        {
+          "rank": 2,
+          "raw_label": "Tomato___Target_Spot",
+          "disease": "Tomato - Target Spot",
+          "confidence": 0.0
+        },
+        {
+          "rank": 3,
+          "raw_label": "Tomato___Septoria_leaf_spot",
+          "disease": "Tomato - Septoria leaf spot",
+          "confidence": 0.0
+        }
+      ],
+      "status": "success",
+      "correct": true,
+      "message": "Disease inference completed"
+    },
+    {
+      "file": "TomatoYellowCurlVirus1.JPG",
+      "expected_label": "Tomato___Tomato_Yellow_Leaf_Curl_Virus",
+      "predicted_label": "Tomato___Tomato_Yellow_Leaf_Curl_Virus",
+      "disease": "Tomato - Tomato Yellow Leaf Curl Virus",
+      "confidence": 0.9975,
+      "is_low_confidence": false,
+      "warning": null,
+      "top_predictions": [
+        {
+          "rank": 1,
+          "raw_label": "Tomato___Tomato_Yellow_Leaf_Curl_Virus",
+          "disease": "Tomato - Tomato Yellow Leaf Curl Virus",
+          "confidence": 0.9975
+        },
+        {
+          "rank": 2,
+          "raw_label": "Tomato___Leaf_Mold",
+          "disease": "Tomato - Leaf Mold",
+          "confidence": 0.002
+        },
+        {
+          "rank": 3,
+          "raw_label": "Tomato___Late_blight",
+          "disease": "Tomato - Late blight",
+          "confidence": 0.0004
+        }
+      ],
+      "status": "success",
+      "correct": true,
+      "message": "Disease inference completed"
+    },
+    {
+      "file": "TomatoYellowCurlVirus2.JPG",
+      "expected_label": "Tomato___Tomato_Yellow_Leaf_Curl_Virus",
+      "predicted_label": "Tomato___Tomato_Yellow_Leaf_Curl_Virus",
+      "disease": "Tomato - Tomato Yellow Leaf Curl Virus",
+      "confidence": 1.0,
+      "is_low_confidence": false,
+      "warning": null,
+      "top_predictions": [
+        {
+          "rank": 1,
+          "raw_label": "Tomato___Tomato_Yellow_Leaf_Curl_Virus",
+          "disease": "Tomato - Tomato Yellow Leaf Curl Virus",
+          "confidence": 1.0
+        },
+        {
+          "rank": 2,
+          "raw_label": "Tomato___Leaf_Mold",
+          "disease": "Tomato - Leaf Mold",
+          "confidence": 0.0
+        },
+        {
+          "rank": 3,
+          "raw_label": "Tomato___Spider_mites Two-spotted_spider_mite",
+          "disease": "Tomato - Spider mites Two-spotted spider mite",
+          "confidence": 0.0
+        }
+      ],
+      "status": "success",
+      "correct": true,
+      "message": "Disease inference completed"
+    },
+    {
+      "file": "TomatoYellowCurlVirus3.JPG",
+      "expected_label": "Tomato___Tomato_Yellow_Leaf_Curl_Virus",
+      "predicted_label": "Tomato___Tomato_Yellow_Leaf_Curl_Virus",
+      "disease": "Tomato - Tomato Yellow Leaf Curl Virus",
+      "confidence": 0.9998,
+      "is_low_confidence": false,
+      "warning": null,
+      "top_predictions": [
+        {
+          "rank": 1,
+          "raw_label": "Tomato___Tomato_Yellow_Leaf_Curl_Virus",
+          "disease": "Tomato - Tomato Yellow Leaf Curl Virus",
+          "confidence": 0.9998
+        },
+        {
+          "rank": 2,
+          "raw_label": "Tomato___Leaf_Mold",
+          "disease": "Tomato - Leaf Mold",
+          "confidence": 0.0001
+        },
+        {
+          "rank": 3,
+          "raw_label": "Tomato___Late_blight",
+          "disease": "Tomato - Late blight",
+          "confidence": 0.0001
+        }
+      ],
+      "status": "success",
+      "correct": true,
+      "message": "Disease inference completed"
+    },
+    {
+      "file": "TomatoYellowCurlVirus4.JPG",
+      "expected_label": "Tomato___Tomato_Yellow_Leaf_Curl_Virus",
+      "predicted_label": "Tomato___Tomato_Yellow_Leaf_Curl_Virus",
+      "disease": "Tomato - Tomato Yellow Leaf Curl Virus",
+      "confidence": 0.9961,
+      "is_low_confidence": false,
+      "warning": null,
+      "top_predictions": [
+        {
+          "rank": 1,
+          "raw_label": "Tomato___Tomato_Yellow_Leaf_Curl_Virus",
+          "disease": "Tomato - Tomato Yellow Leaf Curl Virus",
+          "confidence": 0.9961
+        },
+        {
+          "rank": 2,
+          "raw_label": "Tomato___Tomato_mosaic_virus",
+          "disease": "Tomato - Tomato mosaic virus",
+          "confidence": 0.0033
+        },
+        {
+          "rank": 3,
+          "raw_label": "Tomato___Spider_mites Two-spotted_spider_mite",
+          "disease": "Tomato - Spider mites Two-spotted spider mite",
+          "confidence": 0.0006
+        }
+      ],
+      "status": "success",
+      "correct": true,
+      "message": "Disease inference completed"
+    },
+    {
+      "file": "TomatoYellowCurlVirus5.JPG",
+      "expected_label": "Tomato___Tomato_Yellow_Leaf_Curl_Virus",
+      "predicted_label": "Tomato___Tomato_Yellow_Leaf_Curl_Virus",
+      "disease": "Tomato - Tomato Yellow Leaf Curl Virus",
+      "confidence": 0.9997,
+      "is_low_confidence": false,
+      "warning": null,
+      "top_predictions": [
+        {
+          "rank": 1,
+          "raw_label": "Tomato___Tomato_Yellow_Leaf_Curl_Virus",
+          "disease": "Tomato - Tomato Yellow Leaf Curl Virus",
+          "confidence": 0.9997
+        },
+        {
+          "rank": 2,
+          "raw_label": "Tomato___Late_blight",
+          "disease": "Tomato - Late blight",
+          "confidence": 0.0002
+        },
+        {
+          "rank": 3,
+          "raw_label": "Tomato___Early_blight",
+          "disease": "Tomato - Early blight",
+          "confidence": 0.0
+        }
+      ],
+      "status": "success",
+      "correct": true,
+      "message": "Disease inference completed"
+    },
+    {
+      "file": "TomatoYellowCurlVirus6.JPG",
+      "expected_label": "Tomato___Tomato_Yellow_Leaf_Curl_Virus",
+      "predicted_label": "Tomato___Tomato_Yellow_Leaf_Curl_Virus",
+      "disease": "Tomato - Tomato Yellow Leaf Curl Virus",
+      "confidence": 1.0,
+      "is_low_confidence": false,
+      "warning": null,
+      "top_predictions": [
+        {
+          "rank": 1,
+          "raw_label": "Tomato___Tomato_Yellow_Leaf_Curl_Virus",
+          "disease": "Tomato - Tomato Yellow Leaf Curl Virus",
+          "confidence": 1.0
+        },
+        {
+          "rank": 2,
+          "raw_label": "Tomato___Spider_mites Two-spotted_spider_mite",
+          "disease": "Tomato - Spider mites Two-spotted spider mite",
+          "confidence": 0.0
+        },
+        {
+          "rank": 3,
+          "raw_label": "Tomato___Tomato_mosaic_virus",
+          "disease": "Tomato - Tomato mosaic virus",
+          "confidence": 0.0
+        }
+      ],
+      "status": "success",
+      "correct": true,
+      "message": "Disease inference completed"
+    }
+  ]
+}

@@ -1,23 +1,38 @@
-# Ignore virtual environments
-venv/
-env/
+# Secrets
+.env
+.env.local
+backend/.env
+frontend/.env
 
-# Ignore Python cache files
+# Python
 __pycache__/
-*.pyc
-*.pyo
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+.codex-venv/
 
-# Ignore model files (if large)
-*.h5
-*.pkl
+# Node
+node_modules/
+dist/
+.vite/
+.cache/
 
-# Ignore dataset files
-*.csv
+# Runtime files
+logs/
+uploads/
+*.db
+*.sqlite
+*.sqlite3
+crop_zen_run.db
 
-# Ignore system and IDE files
-.DS_Store
+# Local datasets and generated training folders
+backend/data/
+backend/ml_models/disease_training_subset/
+
+# Local editor and OS files
 .vscode/
 .idea/
-
-# Ignore uploads folder
-static/uploads/
+.DS_Store

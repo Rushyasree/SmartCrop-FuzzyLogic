@@ -1,0 +1,34 @@
+file,expected_label,predicted_label,disease,confidence,is_low_confidence,warning,status,correct,message
+AppleCedarRust1.JPG,Apple___Cedar_apple_rust,Apple___Cedar_apple_rust,Apple - Cedar apple rust,0.9999,False,,success,True,Disease inference completed
+AppleCedarRust2.JPG,Apple___Cedar_apple_rust,Apple___Cedar_apple_rust,Apple - Cedar apple rust,0.9995,False,,success,True,Disease inference completed
+AppleCedarRust3.JPG,Apple___Cedar_apple_rust,Apple___Cedar_apple_rust,Apple - Cedar apple rust,0.9573,False,,success,True,Disease inference completed
+AppleCedarRust4.JPG,Apple___Cedar_apple_rust,Apple___Cedar_apple_rust,Apple - Cedar apple rust,1.0,False,,success,True,Disease inference completed
+AppleScab1.JPG,Apple___Apple_scab,Apple___Apple_scab,Apple - Apple scab,0.9836,False,,success,True,Disease inference completed
+AppleScab2.JPG,Apple___Apple_scab,Apple___Apple_scab,Apple - Apple scab,1.0,False,,success,True,Disease inference completed
+AppleScab3.JPG,Apple___Apple_scab,Squash___Powdery_mildew,Squash - Powdery mildew,0.7111,True,Low confidence prediction. Capture a clearer leaf image and confirm with an agricultural expert.,success,False,Disease inference completed
+CornCommonRust1.JPG,Corn_(maize)___Common_rust_,Corn_(maize)___Common_rust_,Corn (maize) - Common rust ,1.0,False,,success,True,Disease inference completed
+CornCommonRust2.JPG,Corn_(maize)___Common_rust_,Corn_(maize)___Common_rust_,Corn (maize) - Common rust ,1.0,False,,success,True,Disease inference completed
+CornCommonRust3.JPG,Corn_(maize)___Common_rust_,Corn_(maize)___Common_rust_,Corn (maize) - Common rust ,1.0,False,,success,True,Disease inference completed
+PotatoEarlyBlight1.JPG,Potato___Early_blight,Potato___Early_blight,Potato - Early blight,0.9976,False,,success,True,Disease inference completed
+PotatoEarlyBlight2.JPG,Potato___Early_blight,Potato___Early_blight,Potato - Early blight,0.9997,False,,success,True,Disease inference completed
+PotatoEarlyBlight3.JPG,Potato___Early_blight,Potato___Early_blight,Potato - Early blight,0.9767,False,,success,True,Disease inference completed
+PotatoEarlyBlight4.JPG,Potato___Early_blight,Potato___Early_blight,Potato - Early blight,0.9997,False,,success,True,Disease inference completed
+PotatoEarlyBlight5.JPG,Potato___Early_blight,Potato___Early_blight,Potato - Early blight,0.999,False,,success,True,Disease inference completed
+PotatoHealthy1.JPG,Potato___healthy,Potato___healthy,Potato - healthy,0.5034,True,Low confidence prediction. Capture a clearer leaf image and confirm with an agricultural expert.,success,True,Disease inference completed
+PotatoHealthy2.JPG,Potato___healthy,Potato___healthy,Potato - healthy,0.7036,True,Low confidence prediction. Capture a clearer leaf image and confirm with an agricultural expert.,success,True,Disease inference completed
+TomatoEarlyBlight1.JPG,Tomato___Early_blight,Tomato___Early_blight,Tomato - Early blight,0.8748,False,,success,True,Disease inference completed
+TomatoEarlyBlight2.JPG,Tomato___Early_blight,Tomato___Early_blight,Tomato - Early blight,0.8165,False,,success,True,Disease inference completed
+TomatoEarlyBlight3.JPG,Tomato___Early_blight,Tomato___Target_Spot,Tomato - Target Spot,0.4384,True,Low confidence prediction. Capture a clearer leaf image and confirm with an agricultural expert.,success,False,Disease inference completed
+TomatoEarlyBlight4.JPG,Tomato___Early_blight,Tomato___Early_blight,Tomato - Early blight,0.8438,False,,success,True,Disease inference completed
+TomatoEarlyBlight5.JPG,Tomato___Early_blight,Tomato___Early_blight,Tomato - Early blight,0.6146,True,Low confidence prediction. Capture a clearer leaf image and confirm with an agricultural expert.,success,True,Disease inference completed
+TomatoEarlyBlight6.JPG,Tomato___Early_blight,Tomato___Early_blight,Tomato - Early blight,0.9034,False,,success,True,Disease inference completed
+TomatoHealthy1.JPG,Tomato___healthy,Tomato___healthy,Tomato - healthy,0.9999,False,,success,True,Disease inference completed
+TomatoHealthy2.JPG,Tomato___healthy,Tomato___healthy,Tomato - healthy,0.9999,False,,success,True,Disease inference completed
+TomatoHealthy3.JPG,Tomato___healthy,Tomato___healthy,Tomato - healthy,0.9056,False,,success,True,Disease inference completed
+TomatoHealthy4.JPG,Tomato___healthy,Tomato___healthy,Tomato - healthy,1.0,False,,success,True,Disease inference completed
+TomatoYellowCurlVirus1.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus,Tomato___Tomato_Yellow_Leaf_Curl_Virus,Tomato - Tomato Yellow Leaf Curl Virus,0.9975,False,,success,True,Disease inference completed
+TomatoYellowCurlVirus2.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus,Tomato___Tomato_Yellow_Leaf_Curl_Virus,Tomato - Tomato Yellow Leaf Curl Virus,1.0,False,,success,True,Disease inference completed
+TomatoYellowCurlVirus3.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus,Tomato___Tomato_Yellow_Leaf_Curl_Virus,Tomato - Tomato Yellow Leaf Curl Virus,0.9998,False,,success,True,Disease inference completed
+TomatoYellowCurlVirus4.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus,Tomato___Tomato_Yellow_Leaf_Curl_Virus,Tomato - Tomato Yellow Leaf Curl Virus,0.9961,False,,success,True,Disease inference completed
+TomatoYellowCurlVirus5.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus,Tomato___Tomato_Yellow_Leaf_Curl_Virus,Tomato - Tomato Yellow Leaf Curl Virus,0.9997,False,,success,True,Disease inference completed
+TomatoYellowCurlVirus6.JPG,Tomato___Tomato_Yellow_Leaf_Curl_Virus,Tomato___Tomato_Yellow_Leaf_Curl_Virus,Tomato - Tomato Yellow Leaf Curl Virus,1.0,False,,success,True,Disease inference completed
