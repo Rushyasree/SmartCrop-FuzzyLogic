@@ -138,6 +138,14 @@ docker compose up --build
 
 ## Railway Deployment
 
+For the simplest public demo, deploy backend and frontend together as one Railway web service:
+
+- `Dockerfile`
+- `railway.json`
+- `DEPLOY_RAILWAY_SINGLE_SERVICE.md`
+
+This serves the React dashboard and Flask API on the same public domain. The API remains under `/api`.
+
 Railway deployment files are included for a public full-stack demo with PostgreSQL:
 
 - `backend/railway.json`

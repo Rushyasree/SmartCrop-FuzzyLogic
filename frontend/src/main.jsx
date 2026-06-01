@@ -7,7 +7,7 @@ import './styles.css';
 
 ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, BarElement, Tooltip, Legend);
 
-const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
+const API_BASE = import.meta.env.VITE_API_URL || '/api';
 const demoFarms = [
   { id: 1, name: 'North Field', district: 'Mandya', state: 'Karnataka', size_hectares: 2.5, soil_type: 'alluvial' },
   { id: 2, name: 'Canal Plot', district: 'Pune', state: 'Maharashtra', size_hectares: 1.8, soil_type: 'black' },

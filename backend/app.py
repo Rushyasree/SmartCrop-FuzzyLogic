@@ -10,7 +10,7 @@ from datetime import datetime, timezone
 from werkzeug.utils import secure_filename
 from werkzeug.exceptions import RequestEntityTooLarge
 
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, send_from_directory
 from flask_cors import CORS
 from pydantic import ValidationError
 
@@ -32,6 +32,7 @@ from services.crop_recommendation_service import get_crop_recommendation
 
 LOG_FOLDER = os.getenv('LOG_FOLDER', 'logs')
 UPLOAD_FOLDER = os.getenv('UPLOAD_FOLDER', 'uploads')
+FRONTEND_DIST = os.getenv('FRONTEND_DIST', '')
 MAX_FILE_SIZE = int(os.getenv('MAX_UPLOAD_SIZE', 5 * 1024 * 1024))
 ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg', 'gif'}
 ALLOWED_IMAGE_SIGNATURES = {
@@ -337,6 +338,26 @@ def get_crops():
         "count": len(crops),
         "crops": crops
     }), 200
+
+
+@app.route('/', defaults={'path': ''})
+@app.route('/<path:path>')
+def serve_frontend(path):
+    """Serve the React build when backend and frontend share one deployment."""
+    if path.startswith('api/'):
+        return not_found(None)
+
+    if not FRONTEND_DIST:
+        return jsonify({
+            "status": "success",
+            "message": "Crop Zen backend is running",
+            "docs": "/api/docs"
+        }), 200
+
+    requested_path = os.path.join(FRONTEND_DIST, path)
+    if path and os.path.isfile(requested_path):
+        return send_from_directory(FRONTEND_DIST, path)
+    return send_from_directory(FRONTEND_DIST, 'index.html')
 
 @app.errorhandler(404)
 def not_found(error):
