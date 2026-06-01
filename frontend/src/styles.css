@@ -5,7 +5,7 @@ button { cursor: pointer; }
 .app-shell { display: grid; min-height: 100vh; grid-template-columns: 260px 1fr; }
 .sidebar { display: flex; flex-direction: column; gap: 24px; padding: 22px; color: #f8fafc; background: #173b2f; }
 .brand { display: flex; align-items: center; gap: 12px; }
-.brand img { width: 44px; height: 44px; border-radius: 8px; background: #fff; }
+.brand img { width: 44px; height: 44px; border-radius: 8px; background: #fff; object-fit: cover; box-shadow: 0 8px 20px rgba(2, 6, 23, 0.18); }
 .brand strong, .brand span { display: block; }
 .brand span { color: #cbd5d1; font-size: 13px; }
 .sidebar nav { display: grid; gap: 8px; }
